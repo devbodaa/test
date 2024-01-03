@@ -1,0 +1,54 @@
+{
+    "name": "VIRUS_USERBOT",
+    "description": "Telegram Userbot",
+    "logo": "https://dev-media-uploader.pantheonsite.io/d_xn7bcf4.jpg",
+    "keywords": ["Telegram","userbot","Pyrogram"],
+    "repository": "https://github.com/dev-virous/userbot",
+    "env": {
+        "SESSION": {
+            "description": "Pyrogram String Session",
+            "required": true
+        },
+        "TOKEN": {
+            "description": "Your bot token",
+            "required": true
+        },
+        "USERBOT": {
+            "description": "Your bot username",
+            "required": true
+        },
+        "API_ID": {
+            "description": "my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "my.telegram.org",
+            "required": true
+        },
+        "HNDLR": {
+            "description": "Handler | Default (.)",
+            "value": ".",
+            "required": true 
+        },
+        "SUDO_ID": {
+            "description": "Developer id",
+            "value": "5541009328",
+            "required": true 
+        },
+        "REDIS_URL": {
+            "description": "redis url you can get it from (https://redislabs.com)",
+            "required": true 
+        },
+        "TIMEZONE": {
+            "description": "Your timezone (don't edit it if you don't understand)",
+            "value": "Africa/Cairo",
+            "required": true 
+        }
+    },
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "Eco"
+        }
+    }
+}
